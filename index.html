@@ -5,15 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🎃</title>
 <!-- Image provenance: see credits.html and README.md in this repository. Memes sourced
-     from public Instagram posts by @doyourememberthe2000s, @90stvshowstweets and
-     @memezar (original tweet by @jnsulz), each with 50,000+ likes as of Oct 30, 2026.
-     Images are embedded as data URIs in memes/meme0.js-meme3.js. -->
+     from public Reddit r/memes posts by u/DarthGoodguy, u/LukeTheDuke_55, u/nottherealneal,
+     u/i3r1ana, u/thekevo1297 and u/DSRSDR, upvote counts verified Oct 30, 2026.
+     Images are embedded as data URIs in memes/meme0.js-meme5.js. -->
 <style>
 html, body { margin: 0; min-height: 100%; }
 body { background: #17110f; display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
 .meme-page { max-width: 720px; width: 100%; margin: 0 auto; text-align: center; padding: 24px 16px; box-sizing: border-box; }
-.meme { margin: 0 0 24px; width: 100%; }
-.meme img { display: block; max-width: 100%; max-height: 72vh; width: auto; height: auto; margin: 0 auto; border-radius: 16px; }
+.meme { margin: 0 0 24px; width: 100%; height: min(70vh, 620px); display: flex; align-items: center; justify-content: center; }
+.meme a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+.meme img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; border-radius: 16px; }
 .action { display: flex; justify-content: center; }
 button { min-height: 48px; width: 100%; max-width: 320px; font-size: 17px; border-radius: 12px; border: 1px solid #d9d2cb; background: #ffffff; color: #1c1917; cursor: pointer; }
 button:active { background: #f3eeea; }
@@ -29,11 +30,13 @@ button:focus-visible { outline: 3px solid #f97316; outline-offset: 4px; }
 <script src="memes/meme1.js"></script>
 <script src="memes/meme2.js"></script>
 <script src="memes/meme3.js"></script>
+<script src="memes/meme4.js"></script>
+<script src="memes/meme5.js"></script>
 <script>
-const memes = [{"id": 0, "alt": "Tweet: I'm regretting my decision for Rufus as Halloween. Update: photo of three friends in Kim Possible group costumes, one painted pink as Rufus the naked mole rat.", "w": 701, "h": 770, "src": window.MEME_0}, {"id": 1, "alt": "Tweet: I feel sorry for kids who will never get to see the old Disney Channel shows Halloween episodes, with stills from Suite Life of Zack and Cody and other Disney Halloween specials.", "w": 1080, "h": 1349, "src": window.MEME_1}, {"id": 2, "alt": "Tweet: IT'S THEIR SEASON!!! with images of the Hex Girls, Twitches, the Hocus Pocus Sanderson sisters, and two sister witches.", "w": 1080, "h": 1349, "src": window.MEME_2}, {"id": 3, "alt": "Tweet: That's Halloween set I guess. Photos of a woman whose Halloween makeup will not come off. I gotta wear this at work.", "w": 1200, "h": 1381, "src": window.MEME_3}];
+const memes = [{"id": 0, "alt": "Meme: When your costume's perfect, but Mom says wear your coat. Supergirl in costume with an oversized beige coat over it.", "w": 988, "h": 988, "src": window.MEME_0}, {"id": 1, "alt": "Three-panel cat meme: January - a normal cat; Dissociation - a blurry doubled cat; October - the cat dressed as a witch holding a pumpkin candy bucket.", "w": 827, "h": 1000, "src": window.MEME_1}, {"id": 2, "alt": "Brace Yourself meme: One million 'I left a bowl of candy outside, and one person immediately took the entire thing' posts are incoming.", "w": 1080, "h": 565, "src": window.MEME_2}, {"id": 3, "alt": "Meme: When you upload a Halloween meme 3 months before Halloween. A skeleton hand holds a revolver, captioned: The fastest spook in the west.", "w": 720, "h": 710, "src": window.MEME_3}, {"id": 4, "alt": "Meme: Did you hear about the Pinatas they put out for Halloween this year? Photo of a speed camera on a pole.", "w": 607, "h": 745, "src": window.MEME_4}, {"id": 5, "alt": "Meme listing 2026 holidays landing on weekends - Valentine's Day Saturday, 4th of July Saturday, Halloween Saturday, Christmas Friday, New Year's Day Friday - above a man screaming with joy.", "w": 675, "h": 1200, "src": window.MEME_5}];
 const img = document.getElementById('meme');
 const link = document.getElementById('memelink');
-const slugs = ["rufus","disneyhalloween","theirseason","halloweenmakeup"];
+const slugs = ["costumeperfect","octobercat","candybowl","fastestspook","halloweenpinata","perfectyear"];
 function pick(except) {
     const count = memes.length - (except < 0 ? 0 : 1);
     const values = new Uint32Array(1);
