@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🎃</title>
-<!-- Image credits: see README.md in this repository. Sources: Oregon Department of
-     Transportation (CC BY 2.0), DaPuglet (CC BY-SA 2.0), smoMashup1 (CC BY 2.0),
-     inkknife_2000 (CC BY-SA 2.0), i eated a cookie (CC BY 2.0), gruntzooki (CC BY-SA 2.0),
-     kurafire (CC BY 2.0), and two public-domain vintage postcards via Wikimedia Commons. -->
+<!-- Image provenance: see credits.html and README.md in this repository. Memes sourced
+     from public Instagram posts by @doyourememberthe2000s, @90stvshowstweets and
+     @memezar (original tweet by @jnsulz), each with 50,000+ likes as of Oct 30, 2026.
+     Images are embedded as data URIs in memes/meme0.js-meme3.js. -->
 <style>
 html, body { margin: 0; min-height: 100%; }
 body { background: #17110f; display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -25,11 +25,15 @@ button:focus-visible { outline: 3px solid #f97316; outline-offset: 4px; }
 <figure class="meme" aria-live="polite" aria-atomic="true"><a id="memelink" href="credits.html" aria-label="image credits"><img id="meme" alt=""></a></figure>
 <div class="action"><button id="next" type="button">another one</button></div>
 </div>
+<script src="memes/meme0.js"></script>
+<script src="memes/meme1.js"></script>
+<script src="memes/meme2.js"></script>
+<script src="memes/meme3.js"></script>
 <script>
-const memes = [{"id": 0, "alt": "Pug in a pug costume. Get in touch with you're inner pug.", "w": 507, "h": 576, "src": "https://live.staticflickr.com/8514/8593117906_84a63d9993_z.jpg"}, {"id": 1, "alt": "Dog in a princess costume. Obi Wan Kenobi you're my only hope. Bitch. Please.", "w": 680, "h": 1024, "src": "https://live.staticflickr.com/8469/8120704526_9f6aace216_b.jpg"}, {"id": 2, "alt": "Pumpkin patch sign: Red Warty Thing.", "w": 1024, "h": 925, "src": "https://live.staticflickr.com/5610/15543065386_5c589ff577_b.jpg"}, {"id": 3, "alt": "Bank sign: For your safety and ours, please remove holiday masks before entering.", "w": 768, "h": 1024, "src": "https://live.staticflickr.com/2415/2089487917_ce5a8b0be4_b.jpg"}, {"id": 4, "alt": "Lawn sign: Blood drive, Halloween night only, we vant your blood!", "w": 1024, "h": 771, "src": "https://live.staticflickr.com/65535/54080170257_ae38e2447b_b.jpg"}, {"id": 5, "alt": "Cardboard protest sign: Drunk, full of candy and dressed up. I am the 99 percent.", "w": 1024, "h": 1024, "src": "https://live.staticflickr.com/7316/8730379051_3856cb375b_b.jpg"}, {"id": 6, "alt": "Kids costume package labeled Harem Girl.", "w": 375, "h": 500, "src": "https://live.staticflickr.com/2266/1809775131_8439f5c096_z.jpg"}, {"id": 7, "alt": "Halloween cake with botched icing message, a spell check fail.", "w": 500, "h": 375, "src": "https://live.staticflickr.com/2741/4059512779_5475501691_z.jpg"}, {"id": 8, "alt": "Infant Elmo costume package. Elmo swallows babies whole.", "w": 500, "h": 500, "src": "https://live.staticflickr.com/8439/7910079272_e76aa34a8f_z.jpg"}];
+const memes = [{"id": 0, "alt": "Tweet: I'm regretting my decision for Rufus as Halloween. Update: photo of three friends in Kim Possible group costumes, one painted pink as Rufus the naked mole rat.", "w": 701, "h": 770, "src": window.MEME_0}, {"id": 1, "alt": "Tweet: I feel sorry for kids who will never get to see the old Disney Channel shows Halloween episodes, with stills from Suite Life of Zack and Cody and other Disney Halloween specials.", "w": 1080, "h": 1349, "src": window.MEME_1}, {"id": 2, "alt": "Tweet: IT'S THEIR SEASON!!! with images of the Hex Girls, Twitches, the Hocus Pocus Sanderson sisters, and two sister witches.", "w": 1080, "h": 1349, "src": window.MEME_2}, {"id": 3, "alt": "Tweet: That's Halloween set I guess. Photos of a woman whose Halloween makeup will not come off. I gotta wear this at work.", "w": 1200, "h": 1381, "src": window.MEME_3}];
 const img = document.getElementById('meme');
 const link = document.getElementById('memelink');
-const slugs = ["innerpug","ghostdog","wartypumpkin","banksign","blooddrive","occupycandy","costumebox","cake","elmo"];
+const slugs = ["rufus","disneyhalloween","theirseason","halloweenmakeup"];
 function pick(except) {
     const count = memes.length - (except < 0 ? 0 : 1);
     const values = new Uint32Array(1);
