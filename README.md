@@ -1,19 +1,12 @@
 # Halloween
 
-A tiny website that shows a random Halloween meme on every visit, with one button ("another one") to draw a different one. No tracking, no backend: a single self-contained `index.html`.
+A tiny website that shows a random Halloween meme on every visit, with one button ("another one") to draw a different one. No tracking, no backend: a single self-contained `index.html`, with meme images served from `memes/`.
 
-## Image credits
+## Image provenance
 
-All images are the originals of the credited photographers on Flickr.
+Memes are sourced from public Instagram posts, each verified with more than 50,000 likes as of October 30, 2026. Tapping a meme on the site opens its entry in `credits.html`.
 
-- "Get In Touch With Your Inner Pug" by DaPuglet, CC BY-SA 2.0
-  (https://creativecommons.org/licenses/by-sa/2.0/) - https://www.flickr.com/photo.gne?id=8593117906
-- "Dog Halloween Star Wars Costume" by smoMashup1, CC BY 2.0
-  (https://creativecommons.org/licenses/by/2.0/) - https://www.flickr.com/photo.gne?id=8120704526
-- "Aptly Named, Pumpkin Patch" (Red Warty Thing sign) by inkknife_2000, CC BY-SA 2.0 - https://www.flickr.com/photo.gne?id=15543065386
-- "funny sign at the bank" by i eated a cookie, CC BY 2.0 - https://www.flickr.com/photo.gne?id=2089487917
-- "Blood Bank sign, Halloween lawn" by gruntzooki, CC BY-SA 2.0 - https://www.flickr.com/photo.gne?id=54080170257
-- "Old, but not forgotten" (Occupy Halloween sign) by kurafire, CC BY 2.0 - https://www.flickr.com/photo.gne?id=8730379051
-- "Fail" (Harem Girl costume) by Brett L., CC BY-SA 2.0 - https://www.flickr.com/photo.gne?id=1809775131
-- "Spell Check Fail Cake" by Andrew Baron, CC BY 2.0 - https://www.flickr.com/photo.gne?id=4059512779
-- "Elmo Swallows Babies Whole!" by JeepersMedia, CC BY 2.0 - https://www.flickr.com/photo.gne?id=7910079272
+- "I'm regretting my decision for Rufus as Halloween" (Kim Possible group costume) - via @doyourememberthe2000s, 145K likes - https://www.instagram.com/p/B3SsKZulvso/
+- "I feel sorry for kids who will never get to see the old Disney Channel shows Halloween episodes" - by @90stvshowstweets, 93K likes - https://www.instagram.com/p/DAKTkZgNAuJ/
+- "IT'S THEIR SEASON!!!" (Hex Girls, Twitches, Hocus Pocus) - by @90stvshowstweets, 77K likes - https://www.instagram.com/p/DAlQi0COKN4/
+- "That's Halloween set I guess / I gotta wear this at work" - original tweet by @jnsulz, via @memezar, 85K likes - https://www.instagram.com/p/DfCb7xGk5dO/
